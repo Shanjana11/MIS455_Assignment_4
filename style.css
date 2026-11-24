@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f6f7f4;
+    color: #1f2a24;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+/*  Header and search box  */
+.hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1rem 1.5rem;
+}
+
+.hero h1 {
+    margin: 0 0 0.25rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.hero p {
+    margin: 0 0 1.5rem;
+    color: #5d6b63;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.search input {
+    flex: 1 1 220px;
+    min-width: 0;
+    font: inherit;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #dde2dc;
+    border-radius: 8px;
+}
+
+.search button {
+    font: inherit;
+    font-weight: 600;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: #c2410c;
+    color: white;
+    cursor: pointer;
+}
+
+.search button:hover {
+    opacity: 0.9;
+}
+
+/*  Results */
+#randomMealContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+.randomStyle img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.randomStyle {
+    display: flex;
+    border: 2px solid lightblue;
+    border-radius: 6px;
+    padding: 15px;
+    width: 290px;
+    background: white;
+}
+
+/* Footer  */
+footer {
+    padding: 1.5rem 1rem 2.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #5d6b63;
+}
+
+footer a {
+    color: #c2410c;
+}
+
+/* For Small screens */
+@media (max-width: 600px) {
+    .randomStyle {
+        width: 100%;
+    }
+}

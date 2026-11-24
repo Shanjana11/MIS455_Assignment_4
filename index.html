@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Meal Finder</h1>
+        <p>Search TheMealDB by dish name. Shows the first 5 matches.</p>
+
+        <div class="search">
+            <input id="searchBox" type="text" placeholder="Type a meal name, e.g. Arrabiata, Chicken, Beef, Fish">
+            <button onclick="searchMeal()">Search Meal</button>
+        </div>
+    </header>
+
+    <div id="randomMealContainer"></div>
+
+    <footer>
+        Data and images from <a href="https://www.themealdb.com">TheMealDB</a>.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
